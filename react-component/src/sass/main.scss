@@ -1,0 +1,26 @@
+$bg_color: #f4f4f4;
+$primary_color: #49b781;
+$gray_color: #676767;
+$secondary_font: sans-serif;
+header{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    padding: 10px;
+    min-height: 100px;
+    position: relative;
+}
+h1{
+	font-size: 22px;
+}
+.hello-user{
+	position: absolute;
+    right: 30px;
+	font-size: 18px;
+	color: #9a9a9a;
+	line-height: 1;
+	top: calc(50% - 9px);
+}
+.flex-layout{
+	display: flex;
+}

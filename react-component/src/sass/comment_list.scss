@@ -1,0 +1,61 @@
+.container-comments{
+	background-color: $bg_color;
+	padding: 50px;
+}
+.white-container{
+	background: #fff;
+    border: 2px solid #f3f1f0;
+    border-radius: 2px;
+    max-width: 768px;
+	margin: 0 auto;
+}
+.comment-list{
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+}
+.counter-comments{
+	display: none;
+}
+.message-box{
+	form {
+	    text-align: right;
+	}
+	button{
+		color: #fff;
+	    background-color: $primary_color;
+	    border-color: $primary_color;
+	    font-weight: 400;
+	    border: none;
+	    padding: 6px 32px;
+    	font-size: 14px;
+	    line-height: 1.5;
+	    border-radius: .25rem;
+	    cursor: pointer;
+	    margin: 10px;
+	}
+	textarea{
+		width: calc(100% - 40px);
+	    border: none;
+	    padding: 25px 20px 7px;
+	    height: 30px;
+	    color: $primary_color;
+	    font-family: $secondary_font;
+	    letter-spacing: 0.4px;
+	    opacity: 0.8;
+	    resize: none;
+	    &::placeholder{
+	    	color: $primary_color;
+	    }
+	}
+	.form-group{
+		&:first-of-type{
+			border-bottom: 2px solid #f3f1f0;
+		}
+	}
+	.alert-danger {
+	    text-align: left;
+	    padding: 10px 15px;
+	    font-size: 12px;
+	    color: red;
+	}
+}

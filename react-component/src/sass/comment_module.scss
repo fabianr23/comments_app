@@ -1,0 +1,101 @@
+.comment-card{
+	width: 100%;
+    flex-wrap: wrap;
+    margin: 30px auto;
+    box-shadow: 0px 3px 3px #ccc;
+	img {
+	    width: 50px;
+	    height: 50px;
+	    &.rounded{
+	    	border-radius: 50%;
+	    }
+	}
+	.profile-pic {
+	    min-width: 150px;
+	    text-align: center;
+	    padding-top: 30px;
+	    margin: 0;
+	    @media (max-width: 760px){
+	    	min-width: 75px;
+	    }
+	}
+	.title {
+	    font-size: 20px;
+	    line-height: 1;
+	    margin: 0;
+	    color: $primary_color;
+	}
+	.profile-info {
+	    width: calc(100% - 190px);
+    	padding: 25px 20px 20px 0;
+	}
+	.responses{
+		width:100%;
+		background-color: $bg_color;
+	}
+	.counter-response {
+	    font-size: 12px;
+	    padding: 10px;
+	    background: #fff;
+	    text-align: right;
+	    color: #676767;
+	    border-top: 1px solid rgba(204, 204, 204, 0.6);
+	    position: relative;
+	}
+	.response-card{
+		img{
+			width: 40px;
+			height: 40px;
+		}
+	}
+	.response-info {
+	    width: calc(100% - 190px);
+	    padding: 25px 20px;
+	    @media (max-width: 760px){
+	    	padding-left: 0;
+    	}
+	}
+	.message-response{
+		.title {
+		    margin-right: 15px;
+		    font-size:16px;
+		}
+		p {
+		    margin: 0;
+		    font-size: 14px;
+		}
+	}
+	.message-box{
+		form{
+			text-align: center;
+		}
+		textarea{
+		    width: calc(100% - 90px);
+		    padding: 15px 20px 0px;
+		    margin-top: 30px;
+		    color: $gray_color;
+		    &::placeholder{
+		    	color: $gray_color;
+		    }
+		}
+	}
+	.time-publish{
+		color: $gray_color;
+	}
+	.likes-container{
+		position: absolute;
+	    height: 27px;
+	    top: 5px;
+	    line-height: 27px;
+	    align-items: center;
+		button {
+		    height: 23px;
+		    width: 23px;
+		    background-image: url(https://icon-library.net/images/facebook-like-icon-png-transparent/facebook-like-icon-png-transparent-7.jpg);
+		    border: none;
+		    background-size: cover;
+		    background-color: #fff;
+		    cursor: pointer;
+		}
+	}
+}
